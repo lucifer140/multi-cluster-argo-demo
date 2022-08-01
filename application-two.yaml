@@ -7,8 +7,8 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: argocd
-    server: https://kubernetes.default.svc
+    namespace: default
+    server: https://83C4F3B913D69267AC1A3C81CF079F5A.gr7.eu-central-1.eks.amazonaws.com
 
   project: default
   source:
