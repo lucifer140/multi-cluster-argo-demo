@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     namespace: argocd
-    server: https://kubernetes.default.svc
+    server: arn:aws:eks:ca-central-1:885300287765:cluster/central-eks
   project: default
   source:
     path: applications
