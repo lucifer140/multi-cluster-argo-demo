@@ -6,10 +6,10 @@ spec:
   generators:
   - list: 
       elements:
-      - cluster: manifests
+      - cluster: manifests-central
         url: https://kubernetes.default.svc  
-      - cluster: wordes
-        url: https://83C4F3B913D69267AC1A3C81CF079F5A.gr7.eu-central-1.eks.amazonaws.com
+      - cluster: wordes-frank
+        url: https://3185E919B26D929BB3B99D94AC95B7AE.gr7.eu-central-1.eks.amazonaws.com
   template: 
     metadata:
       name: test-set
