@@ -7,8 +7,8 @@ spec:
   generators:
   - list: 
       elements:
-      - cluster: manifests-central
-        url: https://kubernetes.default.svc 
+        #  - cluster: manifests-central
+        # url: https://kubernetes.default.svc 
       - cluster: arn:aws:eks:ca-central-1:885300287765:cluster/central-eks
         url: https://FC5BB329651636CCED0B1C9BBA0CEBCA.sk1.ca-central-1.eks.amazonaws.com 
       - cluster: arn:aws:eks:eu-central-1:885300287765:cluster/frank-eks
