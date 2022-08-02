@@ -8,8 +8,10 @@ spec:
   - list: 
       elements:
       - cluster: manifests-central
-        url: https://kubernetes.default.svc  
-      - cluster: wordes-frank
+        url: https://kubernetes.default.svc 
+      - cluster: arn:aws:eks:ca-central-1:885300287765:cluster/central-eks
+        url: https://FC5BB329651636CCED0B1C9BBA0CEBCA.sk1.ca-central-1.eks.amazonaws.com 
+      - cluster: arn:aws:eks:eu-central-1:885300287765:cluster/frank-eks
         url: https://3185E919B26D929BB3B99D94AC95B7AE.gr7.eu-central-1.eks.amazonaws.com
   template: 
     metadata:
