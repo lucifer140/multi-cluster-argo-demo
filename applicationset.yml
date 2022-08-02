@@ -1,21 +1,21 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: test-set1
+  name: test-set5555
   namespace: argocd
 spec:
   generators:
   - list: 
       elements:
-        #  - cluster: manifests-central
-        # url: https://kubernetes.default.svc 
-      - cluster: arn:aws:eks:ca-central-1:885300287765:cluster/central-eks
+      - cluster: manifests
+        url: https://kubernetes.default.svc 
+      - cluster: manifests
         url: https://FC5BB329651636CCED0B1C9BBA0CEBCA.sk1.ca-central-1.eks.amazonaws.com 
-      - cluster: arn:aws:eks:eu-central-1:885300287765:cluster/frank-eks
+      - cluster: manifests
         url: https://3185E919B26D929BB3B99D94AC95B7AE.gr7.eu-central-1.eks.amazonaws.com
   template: 
     metadata:
-      name: test-set
+      name: test-set55555
     spec:
       project: default
       source:
@@ -25,8 +25,3 @@ spec:
       destination:
         server: '{{url}}'
         namespace: default
-          # syncPolicy:
-          # automated: # automated sync by default retries failed attempts 5 times with following delays between attempts ( 5s, 10s, 20s, 40s, 80s ); retry controlled using `retry` field.
-          # prune: true # Specifies if resources should be pruned during auto-syncing ( false by default ).
-          # selfHeal: true # Specifies if partial app sync should be executed when resources are changed only in target Kubernetes cluster and no git change detected ( false by default ).
-          # allowEmpty: false # 
